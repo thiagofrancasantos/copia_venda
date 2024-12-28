@@ -1,11 +1,29 @@
-<h2>Login</h2>
-
-<form>
-    <label for="email">Email:</label>
-    <input id="email" type="email">
-    <br>
-    <label for="password">Senha:</label>
-    <input id="password" type="password">
-    <br>
-    <button type="submit">Entrar</button>
-</form>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="login.component.css">
+</head>
+<body>
+    <div class="login-container">
+        <div class="login-card">
+            <h1 class="login-title">Login</h1>
+            <form action="/login" method="POST">
+                <div class="form-group">
+                    <label for="email">E-mail</label>
+                    <input type="email" id="email" name="email" placeholder="Digite seu e-mail" required>
+                </div>
+                <div class="form-group">
+                    <label for="password">Senha</label>
+                    <input type="password" id="password" name="password" placeholder="Digite sua senha" required>   
+                </div>
+                <button type="submit" class="login-button">Entrar</button>
+                <p class="signup-link">
+                    Ainda não tem conta? <a href="/register">Cadastre-se</a>
+                </p>
+            </form>
+        </div>
+    </div>
+</body>
+</html>

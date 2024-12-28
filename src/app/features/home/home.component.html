@@ -1,1 +1,46 @@
-<h2>Bem-vindo à Home</h2>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vendeed</title>
+    <link rel="stylesheet" href="home.component.css"> 
+</head>
+<body>
+    <header>
+        <h1>Vendeed</h1>
+        <button (click)="goToLogin()">Entrar</button>
+    </header>
+
+    <div class="container">
+        <div class="ad-box">
+            <img src="https://images.tcdn.com.br/img/img_prod/1050340/camisa_corinthians_24_25_edicao_especial_versao_fan_4452_1_aa5920ad60604705c045a2b1e4a73074.jpg" alt="product image">
+            <div class="details">
+                <h2>Camisa Corinthians</h2>
+                <p>R$ 250,00</p>
+            </div>
+            <button class="favorite" (click)="toggleFavorite($event)"></button>
+        </div>
+        
+
+        <div class="ad-box">
+            <img src="https://static.netshoes.com.br/produtos/mala-nike-brasilia-duff-95/26/2IC-5668-026/2IC-5668-026_zoom1.jpg?ts=1642757218&ims=1088x" alt="product image">
+            <div class="details">
+                <h2>Bolsa Nike</h2>
+                <p>R$ 150,00</p>
+            </div>
+            <button class="favorite" (click)="toggleFavorite($event)"></button>
+        </div>
+
+        <div class="ad-box">
+            <img src="https://acdn.mitiendanube.com/stores/002/091/477/products/grande21-586cafbfcef4e70ec116806166966346-1024-1024.webp" alt="product image">
+            <div class="details">
+                <h2>Chapeu Nike</h2>
+                <p>R$ 90,00</p>
+            </div>
+            <button class="favorite" (click)="toggleFavorite($event)"></button>
+        </div>
+    </div>
+    
+</body>
+</html>
+
